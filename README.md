@@ -1,6 +1,10 @@
 # App README
 
-- [ ] TODO Replace or update this README with instructions relevant to your application
+Alunos:
+Guilherme Chagas (122659)
+Guilherme Torres (122607)
+Rafael Reis (122616)
+Tiago Nobre (122632)
 
 ## Project Structure
 
