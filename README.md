@@ -6,6 +6,7 @@ Guilherme Torres (122607)
 Rafael Reis (122616)
 Tiago Nobre (122632)
 
+link vídeo: https://youtu.be/tDX6-RSipUs
 ## Project Structure
 
 The sources of your App have the following structure:
