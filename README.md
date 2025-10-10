@@ -18,8 +18,6 @@ O projeto possui um workflow GitHub Actions para automatizar a criação do fich
 - Publica o `.jar` como artefacto do workflow.
 
 ### Excerto do build.yml
-
-
 name: Build and Package Java Project
 
 on:
