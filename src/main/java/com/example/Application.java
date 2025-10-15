@@ -14,7 +14,4 @@ public class Application implements AppShellConfigurator {
     }
 
 }
-@Bean
-public CurrencyConverterService currencyConverterService() {
-    return new CurrencyConverterService("SUA_API_KEY", 0.02); // 2% de spread
-}
+
