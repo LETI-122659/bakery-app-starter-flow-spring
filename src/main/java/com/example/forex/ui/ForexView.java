@@ -1,14 +1,8 @@
 package com.example.forex.ui;
 
-import com.example.base.ui.component.ViewToolbar;
-import com.example.examplefeature.Task;
-import com.example.examplefeature.TaskService;
-import com.example.forex.ForexService;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.button.ButtonVariant;
 import com.vaadin.flow.component.combobox.ComboBox;
-import com.vaadin.flow.component.datepicker.DatePicker;
-import com.vaadin.flow.component.grid.Grid;
 import com.vaadin.flow.component.html.Main;
 import com.vaadin.flow.component.notification.Notification;
 import com.vaadin.flow.component.notification.NotificationVariant;
@@ -22,18 +16,11 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.time.ZoneId;
-import java.time.format.DateTimeFormatter;
-import java.time.format.FormatStyle;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
-import java.util.Optional;
+
 import com.vaadin.flow.theme.lumo.LumoUtility;
 import org.json.JSONObject;
-import org.springframework.stereotype.Service;
-
-import static com.vaadin.flow.spring.data.VaadinSpringDataHelpers.toSpringPageRequest;
 
 
 @Route("Forex")
