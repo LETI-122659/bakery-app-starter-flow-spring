@@ -34,6 +34,10 @@
     
     <dependencies>
         <!-- https://mvnrepository.com/artifact/com.snowplowanalytics/scala-forex -->
+
+
+
+        <!-- https://mvnrepository.com/artifact/org.python/jython-standalone -->
         <dependency>
             <groupId>com.snowplowanalytics</groupId>
             <artifactId>scala-forex_2.13</artifactId>
@@ -44,11 +48,13 @@
             <artifactId>json</artifactId>
             <version>20240303</version>
         </dependency>
+
         <dependency>
             <groupId>com.vaadin</groupId>
             <!-- Replace artifactId with vaadin-core to use only free components -->
             <artifactId>vaadin</artifactId>
         </dependency>
+
         <dependency>
             <groupId>com.vaadin</groupId>
             <artifactId>vaadin-spring-boot-starter</artifactId>
@@ -67,6 +73,35 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-mail</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.pdfbox</groupId>
+            <artifactId>pdfbox</artifactId>
+            <version>2.0.30</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>javax.money</groupId>
+            <artifactId>money-api</artifactId>
+            <version>1.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>jakarta.persistence</groupId>
+            <artifactId>jakarta.persistence-api</artifactId>
+            <version>3.1.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sun.mail</groupId>
+            <artifactId>jakarta.mail</artifactId>
+            <version>2.0.1</version>
+        </dependency>
+
     </dependencies>
     
     <build>
@@ -145,4 +180,3 @@
         </pluginRepository>
     </pluginRepositories>
 </project>
-
