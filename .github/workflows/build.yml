@@ -1,0 +1,29 @@
+name: Build and Package Java Project
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v4
+
+      - name: Configurar Java 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+
+      - name: Construir projeto com Maven
+        run: mvn clean package
+
+      - name: Publicar artefacto .jar
+        uses: actions/upload-artifact@v4
+        with:
+          name: pacote-jar
+          path: target/*.jar

@@ -1,8 +1,52 @@
 # App README
 
-- [ ] TODO Replace or update this README with instructions relevant to your application
+Alunos:
+Guilherme Chagas (122659)
+Guilherme Torres (122607)
+Rafael Reis (122616)
+Tiago Nobre (122632)
+
+link vídeo: https://youtu.be/tDX6-RSipUs
+
+## CI/CD Pipeline
+
+O projeto possui um workflow GitHub Actions para automatizar a criação do ficheiro `.jar`. 
+
+- O workflow é acionado sempre que há um push na branch `main`.
+- Configura o ambiente Java 21.
+- Executa `mvn clean package` para gerar o `.jar`.
+- Publica o `.jar` como artefacto do workflow.
+
+### Excerto do build.yml
+
+
+name: Build and Package Java Project
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+      - run: mvn clean package
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pacote-jar
+          path: target/*.jar
 
 ## Project Structure
+
+
+
 
 The sources of your App have the following structure:
 
