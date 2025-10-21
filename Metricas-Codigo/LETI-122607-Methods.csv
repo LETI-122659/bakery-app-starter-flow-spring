@@ -1,0 +1,8 @@
+Method Name;CCM;CND;CDISP;CINT;FDP;HD;HEF;HER;HL;HVC;HVL;LOC;LAA;LND;MMI;MND;CC;NOAV;NOL;NOPM
+com.example.Application.main(String[]);0;0;1.0;1;0;2.5;38.7744;0.0038;6;6;15.5098;3;0.0;0;81.3571;0;1;1;0;1
+com.example.forex.ForexService.ForexService(double);0;0;0.0;0;0;1.5;17.4145;0.0022;5;5;11.6096;3;1.0;0;82.3002;0;1;2;0;1
+com.example.forex.ForexService.convert(String, String, double);0;0;0.0;0;0;3.5;239.8634;0.0129;18;14;68.5324;5;1.0;0;71.9214;0;1;6;0;3
+com.example.forex.ForexService.getRate(String, String);1;0;0.6667;9;0;10.8571;2077.7177;0.0543;39;30;191.3687;16;0.0;1;57.6683;1;2;9;1;2
+com.example.forex.ui.ForexView.ForexView();0;0;0.8333;11;3;11.75;4371.8214;0.0891;69;42;372.0699;24;0.625;0;51.8931;0;1;10;0;0
+com.example.forex.ui.ForexView.convertCurrency();3;1;0.875;7;3;13.0625;4394.5962;0.0894;62;43;336.4284;21;0.5556;0;53.2512;2;5;15;0;0
+com.example.forex.ui.ForexView.getRate(String, String);1;0;0.75;8;0;10.9286;2111.5492;0.0549;39;31;193.2137;17;0.0;1;57.0623;2;2;9;1;2
