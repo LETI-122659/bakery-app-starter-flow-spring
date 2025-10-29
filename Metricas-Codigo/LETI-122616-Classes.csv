@@ -1,0 +1,18 @@
+Class Name,ATFD,CCC,CBO,DAC,DIT,CHD,CHEF,CHER,CHL,CHVC,CHVL,LCOM,CLOC,CMI,MPC,NCSS,NOAC,NOAM,NOA,SIZE2,NOC,NOM,NOO,NOOM,NOPA,RFC,TCC,WOC,WMC
+com.example.Application,0,0,0,0,1,3.0,90.0,0.0067,10,8,30.0,1,3,79.2493,1,1,0,1,0,15,0,1,15,0,0,2,0.0,1.0,1
+com.example.PDF.PDF,1,0,2,2,1,4.6667,483.5241,0.0205,28,13,103.6123,3,6,68.715,0,5,4,5,3,21,0,5,18,0,0,5,0.2,0.2,5
+com.example.PDF.PDFRepository,N/A,0,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,0,0.0,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+com.example.PDF.PDFService,2,0,3,1,1,19.0,4518.227,0.0911,48,31,237.8014,1,19,55.4773,13,17,0,1,1,15,0,1,14,0,0,18,0.0,1.0,1
+com.example.PDF.ui.PDFView,1,1,1,1,5,7.8929,1313.5377,0.04,35,27,166.4211,0,13,60.062,7,8,0,0,9,132,0,1,131,0,0,8,0.0,0.0,2
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Application,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"Classe principal da aplicação, de baixa complexidade e acoplamento zero. Possui poucas linhas de código e apenas um método, mantendo excelente manutenbilidade (CMI=79). Esta classe cumpre sua função de ponto de entrada da aplicação e não apresenta riscos significativos.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PDF,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"Classe de domínio representando PDFs. Apresenta métodos mistos (getters, setters e lógicas menores), baixa coesão interna (LCOM=3, TCC=0.2) e manutenbilidade razoável (CMI=68). Apesar de não apresentar acoplamento alto, a mistura de responsabilidades reduz a clareza do código. Recomenda-se separar claramente a entidade de dados da lógica de manipulação ou validação do PDF, aumentando a coesão e facilitando manutenção futura.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PDFRepository,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"Interface de acesso a dados (provavelmente Spring Repository), sem implementação concreta. Métricas não aplicáveis. Não há riscos nem complexidade a considerar.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PDFService,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"Classe crítica: Alta complexidade e esforço cognitivo (CHD e CHEF elevados), baixa manutebilidade (CMI=55) e métodos com muitas responsabilidades. Provavelmente concentra a criação, salvamento e manipulação de PDFs em métodos únicos, dificultando compreensão e teste. Para reduzir riscos e facilitar manutenção, recomenda-se dividir a lógica em múltiplos métodos menores e, possivelmente, criar classes auxiliares focadas em tarefas específicas (como PDFGenerator, PDFStorage, etc.).",,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PDFView,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"Classe de interface gráfica com hierarquia profunda (DIT=5) e baixa coesão (TCC=0.0). Possui métodos e responsabilidades misturadas (renderização, lógica de inicialização, interação). Manutenção média (CMI=60). Para melhorar a estrutura, é recomendada a separação de responsabilidades em classes distintas: View (renderização), Controller (eventos e lógica) e possivelmente Handler (interação com dados). Isso aumentaria coesão e reduziria complexidade cognitiva.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,
