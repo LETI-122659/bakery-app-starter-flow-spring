@@ -106,6 +106,11 @@ public class ForexView extends Main {
                 content.append(inputLine);
             }
             JSONObject obj = new JSONObject(content.toString());
+            System.out.println("API Response: " + obj.toString());
+            if (!obj.getBoolean("success")) {
+                System.out.println("API Error: " + obj.getJSONObject("error").getString("info"));
+                throw new Exception("API Error: " + obj.getJSONObject("error").getString("info"));
+            }
             return obj.getDouble("result");
         } finally {
             conn.disconnect();
